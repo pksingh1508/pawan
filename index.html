@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Kumar</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="shortcut icon" href="./assets//logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./Responsive/responsive.css">
+    <script src="https://kit.fontawesome.com/7469886fdd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav class="navbar_container">
+            <div class="container">
+                <div class="nav_left" data-aos="fade-left">
+                    <span class="myname">
+                        <a href="#home">Pawan</a>
+                    </span>
+                </div>
+                <div class="nav_right" data-aos="fade-right">
+                    <span class="nav_tag">
+                        <a href="#home">Home</a>
+                    </span>
+                    <span class="nav_tag">
+                        <a href="#about">About</a>
+                    </span>
+                    <span class="nav_tag">
+                        <a href="#skills">Skills</a>
+                    </span>
+                    <span class="nav_tag">
+                        <a href="#qualifications">Qualifications</a>
+                    </span>
+                    <span class="nav_tag">
+                        <a href="#project">Projects</a>
+                    </span>
+                    <span class="nav_tag">
+                        <a href="#contact">Contact Me</a>
+                    </span>
+                    <span class="theme_swap">
+                        <span id="moon"><i class="fa-regular fa-moon" onclick="closeModal()"></i></span>
+                        <span id="sun"><i class="fa-solid fa-sun" onclick="closeModal()"></i></span>
+                    </span>
+                </div>
+                <div class="bar" data-aos="fade-left">
+                    <a href="#home">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <!-- <i class="fa-solid fa-bars openTab"></i>
+                <i class="fa-solid fa-x closeTab"></i> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- modal for nav bar -->
+    <div class="modal">
+        <i class="fa-solid fa-x cross" onclick="closeModal()"></i>
+        <ul>
+            <li>
+                <a href="#home" onclick="closeModal()">Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick="closeModal()">About</a>
+            </li>
+            <li>
+                <a href="#skills" onclick="closeModal()">Skill</a>
+            </li>
+            <li>
+                <a href="#qualifications" onclick="closeModal()">Qualification</a>
+            </li>
+            <li>
+                <a href="#project" onclick="closeModal()">Project</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="closeModal()">Contact Me</a>
+            </li>
+        </ul>
+        <span class="theme_swap">
+            <span id="moon1"><i class="fa-regular fa-moon"></i></span>
+            <span id="sun1"><i class="fa-solid fa-sun"></i></span>
+        </span>
+    </div>
+
+    <!-- Main Section -->
+
+    <!-- HOme Section -->
+    <section id="home">
+        <div class="home-container">
+            <div class="home_social" data-aos="fade-left">
+                <a href="https://www.linkedin.com/in/pawan-kumar-731ab3239/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/pksingh1508">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.threads.net/@pksingh1508">
+                    <i class="fa-brands fa-threads"></i>
+                </a>
+                <a href="https://www.instagram.com/pksingh1508/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="text-container" data-aos="fade-right">
+                <h1 class="name">Hi, I'm Pawan</h1>
+                <p>I am <span id="typing_text"></span></p>
+                <p>Building Software to solve real life problems.</p>
+                <div class="contact_button">
+                    <a href="#contact">
+                        <button class="contact_btn">Contact Me</button>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                </div>
+                <!-- scroll down -->
+                <div class="scroll_btn">
+                    <a href="#about">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <span>Scroll Down</span>
+                        <i class="fa-solid fa-angles-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="blob-container" data-tilt="true">
+                <div class="blob" data-aos="fade-right">
+                    <img src="./assets/imgpng.png" alt="myImage" width="250px" height="250px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about_container">
+            <div class="about_heading">
+                <h1>About Me</h1>
+                <p>My Introduction</p>
+            </div>
+            <div class="about_info">
+                <div class="info_image" data-tilt="true" data-aos="fade-left">
+                    <img src="./assets/img5.jpeg" alt="PawanImage" height="350px">
+                </div>
+                <div class="info_text" data-aos="fade-right">
+                    <p>Hey there,👋 I'm Pawan a 19-year-old CSE undergrad who is passionate about Software Development.
+                        Currently, I'm pursuing my career as a Full Stack Web
+                        Developer 👨🏻‍💻 with 1+ years of experience. I share my learnings
+                        through speaking engagements and write-ups. ✍🏻</p>
+                    <div class="resume_btn">
+                        <button id="getResume">Resume</button>
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skill_container">
+            <div class="about_heading" data-aos="fade-left">
+                <h1>Skills</h1>
+                <p>My Technical Skills</p>
+            </div>
+            <div class="skill-main-container">
+
+                <!-- first skill container -->
+                <div class="language_container" data-aos="fade-right">
+                    <div class="firstDiv" id="openClose">
+                        <span><i class="fa-solid fa-angles-left"></i></span>
+                        <div class="first_subDiv">
+                            <p class="subDiv_heading">Languages</p>
+                            <p class="subDiv_desc">Languages that I have picked up over the years</p>
+                        </div>
+                        <span><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    <div class="skill_info skill_info_updown">
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span><i class="fa-brands fa-square-js"></i></span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span class="tsLogo"><img src="./assets//img/ts-logo.svg" alt="TS" width="33px"></span>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span class="tsLogo clogo"><img src="./assets/C++-Logo.wine.svg" alt="C++"
+                                        width="65px"></span>
+                                <span>C++</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second skill container -->
+                <div class="language_container" data-aos="fade-left">
+                    <div class="firstDiv" id="openClose1">
+                        <span><i class="fa-solid fa-angles-left"></i></span>
+                        <div class="first_subDiv">
+                            <p class="subDiv_heading">Libraries & FrameWork</p>
+                            <p class="subDiv_desc">Libraries and Frameworks that I prefer to work with</p>
+                        </div>
+                        <span><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    <div class="skill_info1 skill_info_updown1">
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span><i class="fa-brands fa-react"></i></span>
+                                <span>React</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span class="tsLogo"><img src="./assets/img/tailwindcss.svg" alt="TS"
+                                        width="33px"></span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span><i class="fa-brands fa-node-js"></i></span>
+                                <span>Node js</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span class="tsLogo"><img src="./assets/img/MongoDB.svg" alt="Mongo"
+                                        width="33px"></span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- third skill container -->
+                <div class="language_container" data-aos="fade-right">
+                    <div class="firstDiv" id="openClose2">
+                        <span><i class="fa-solid fa-angles-left"></i></span>
+                        <div class="first_subDiv">
+                            <p class="subDiv_heading">Tools</p>
+                            <p class="subDiv_desc">Tools that I know and use on a daily basis</p>
+                        </div>
+                        <span><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    <div class="skill_info2 skill_info_updown2">
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span><i class="fa-brands fa-git-alt"></i></span>
+                                <span>Git</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span><i class="fa-brands fa-square-github"></i></span>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="skill_info_desc">
+                            <div class="skill_info_up">
+                                <span class="tsLogo"><img src="./assets/img/vercel.svg" alt="vercel"
+                                        width="33px"></span>
+                                <span>Vercel</span>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Qualification Section -->
+    <section id="qualifications">
+        <div class="about_container">
+            <div class="about_heading" data-aos="fade-left">
+                <h1>Qualifications</h1>
+                <p>My Educational Qualifications</p>
+            </div>
+            <div class="edu_container">
+
+                <div class="edu_left" data-aos="fade-left">
+                    <p class="edu_circle"></p>
+                    <p class="edu_line"></p>
+                    <p class="edu_circle"></p>
+                    <p class="edu_line"></p>
+                    <p class="edu_circle"></p>
+                    <p class="edu_line"></p>
+                </div>
+
+                <div class="edu_right" data-aos="fade-right">
+                    <div class="edu_content">
+                        <p class="course_name">Bachelor of Computer Application (BCA)</p>
+                        <p><i>DDU Gorakhpur University (Gorakhpur)</i></p>
+                        <p><i>2021 - 2024</i></p>
+                    </div>
+                    <div class="edu_content">
+                        <p class="course_name">Senior Secondary</p>
+                        <p><i>Oriental Senior Secondary School (Deoria)</i></p>
+                        <p><i>2019 - 2021</i></p>
+                    </div>
+                    <div class="edu_content">
+                        <p class="course_name">High School</p>
+                        <p><i>Oriental Senior Secondary School (Deoria)</i></p>
+                        <p><i>2017 - 2019</i></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Project Section -->
+    <section id="project">
+        <div class="about_container">
+            <div class="about_heading" data-aos="fade-right">
+                <h1>Projects</h1>
+                <p>Most recent Works</p>
+            </div>
+
+            <div class="project_container">
+                <!-- First Project -->
+                <div class="project_section">
+                    <div class="project_video" data-aos="fade-left">
+                        <video src="./assets/video/video1.mp4" muted loop autoplay width="350px" />
+                    </div>
+                    <div class="project_desc" data-aos="fade-right">
+                        <h1>URL Shortener</h1>
+                        <p>This is an application to short any given URL just like bitly. Short any Valid URL and send
+                            anyone anywhere</p>
+                        <a href="https://short-url-roan.vercel.app/" target="_blank">
+                            <button class="checkoutBtn">Checkout</button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Second Project -->
+                <div class="project_section">
+                    <div class="project_video" data-aos="fade-left">
+                        <video src="./assets/video/video2.mp4" muted loop autoplay width="350px" />
+                    </div>
+                    <div class="project_desc" data-aos="fade-right">
+                        <h1>Todo App</h1>
+                        <p>This is a basic Todo app for creating, updating, delete todo based on CRUD operation. Make
+                            your day more productive by creating what to do?</p>
+                        <a href="https://todos-application-ten.vercel.app/" target="_blank">
+                            <button class="checkoutBtn">Checkout</button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Third Project -->
+                <div class="project_section">
+                    <div class="project_video" data-aos="fade-left">
+                        <video src="./assets/video/video3.mp4" muted loop autoplay width="350px" />
+                    </div>
+                    <div class="project_desc" data-aos="fade-right">
+                        <h1>Dev Detective</h1>
+                        <p>This is an application based on GitHub API where any one can get some data of gitHub user
+                            using user name.</p>
+                        <a href="https://todos-application-ten.vercel.app/" target="_blank">
+                            <button class="checkoutBtn">Checkout</button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Fourth Project -->
+                <div class="project_section">
+                    <div class="project_video" data-aos="fade-left">
+                        <video src="./assets/video/video4.mp4" muted loop autoplay width="350px" />
+                    </div>
+                    <div class="project_desc" data-aos="fade-right">
+                        <h1>Weather App</h1>
+                        <p>This is a live showing weather application. It show live weather fetch from openWeather API.
+                        </p>
+                        <a href="https://todos-application-ten.vercel.app/" target="_blank">
+                            <button class="checkoutBtn">Checkout</button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="about_container">
+            <div class="about_heading" data-aos="fade-left">
+                <h1>Contact Me</h1>
+                <p>Want to connect? My inbox is always open!</p>
+            </div>
+
+            <div class="c_container">
+                <div class="c_left" data-aos="fade-left">
+                    <div class="c_leftInfo">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="c_leftDesc">
+                            <p>Email</p>
+                            <p>pawankumarlearner@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="c_leftInfo">
+                        <i class="fa-solid fa-mobile"></i>
+                        <div class="c_leftDesc">
+                            <p>Mobile No</p>
+                            <p>+91 72799676</p>
+                        </div>
+                    </div>
+                    <div class="c_leftInfo">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="c_leftDesc">
+                            <p>Location</p>
+                            <p>Gorakhpur, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_right" data-aos="fade-right">
+                    <form action="https://formspree.io/f/xjvqgdll" method="POST">
+                        <div class="c_rightName">
+                            <div class="c_name">
+                                <p>Name</p>
+                                <input type="text" name="name" autocomplete="off" required>
+                            </div>
+                            <div class="c_email">
+                                <p>Email</p>
+                                <input type="email" name="email" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="c_rightSubject">
+                            <p>Subject</p>
+                            <input type="text" name="subject" autocomplete="off" required>
+                        </div>
+                        <div class="c_message">
+                            <p>Message</p>
+                            <textarea cols="20" rows="5" name="message" autocomplete="off" required></textarea>
+                        </div>
+
+                        <div class="c_rightBtn">
+                            <button class="submitBtn" type="submit">Submit</button>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="about_container">
+
+            <div class="footer_container">
+                <div class="f_info" data-aos="fade-left">
+                    <p>PAWAN</p>
+                    <P>KUMAR</P>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="f_link" data-aos="fade-right">
+                    <a href="#about">About</a>
+                    <a href="#projects">Project</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="f_social" data-aos="fade-left">
+                    <a href="https://www.linkedin.com/in/pawan-kumar-731ab3239/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/pksingh1508">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/pksingh1508/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="copy">&copy;All right Reserved </p>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./JavaScript/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script>
+        var typed = new Typed('#typing_text', {
+            strings: ["a Web Developer", "a Full Stack Developer", "a Coder"],
+            typeSpeed: 150,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000,
+        });
+    </script>
+
+</body>
+
+</html>
