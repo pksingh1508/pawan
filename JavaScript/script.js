@@ -38,7 +38,8 @@ themeSwap_sun1.addEventListener('click', () => {
 })
 
 getResume.addEventListener('click', () => {
-    const url = "https://res.cloudinary.com/dbym760el/image/upload/v1691062294/PawanSingh/Pawan_Kumar_eosbrz.pdf";
+    // const url = "https://res.cloudinary.com/dbym760el/image/upload/v1691062294/PawanSingh/Pawan_Kumar_eosbrz.pdf";
+    const url = "https://res.cloudinary.com/dbym760el/image/upload/v1691555738/Resume/PawanKumar_qwvb99.pdf";
     const link = document.createElement("a");
     link.href = url;
     link.download = "downloaded-pdf.pdf";
