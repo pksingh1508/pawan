@@ -2,6 +2,7 @@
   .c_name,
   .c_email {
     padding: 2px 2px;
+    width: 100%;
   }
   .c_rightName {
     flex-direction: column;
